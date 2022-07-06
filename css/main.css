@@ -133,7 +133,6 @@ button {
   fill: currentColor;
 }
 
-/*Header-Навигация */
 .nav__site {
   display: flex;
   justify-content: center;
@@ -180,7 +179,6 @@ button {
   border-radius: 2px;
 }
 
-/*Header-Контактные линки */
 .contact {
   margin-left: auto;
   font-style: normal;
