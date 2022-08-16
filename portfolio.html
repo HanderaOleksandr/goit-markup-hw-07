@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
@@ -46,7 +46,10 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a class="contact__icon" href="mailto:info@devstudio.com">
+            <a
+              class="contact__icon"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="icon" width="16" height="12">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
@@ -66,89 +69,26 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-open__btn">
-          <svg class="mob-icon__open" width="40" height="40">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"></use>
-          </svg>
-        </button>
-      </div>
-
-      <div class="mob-menu is is-hidden">
-        <div class="container">
-          <div class="mob-menu__top">
-            <button type="button" class="menu-close__btn">
-              <svg class="mob-icon__close" width="40" height="40">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-close_40px"
-                ></use>
-              </svg>
-            </button>
-            <ul class="mob-navigation__list">
-              <li class="mob-navigation__item">
-                <a href="./index.html" class="mob-navigation__link "
-                  >Студия</a
-                >
-              </li>
-              <li class="mob-navigation__item">
-                <a href="./portfolio.html" class="mob-navigation__link current"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="mob-navigation__item">
-                <a href="" class="mob-navigation__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mob-menu__bottom">
-            <ul class="mob-contact__list">
-              <li class="mob-contact__item">
-                <a class="mob-tel__link" href="tel:+380961111111">
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="mob-contact__item">
-                <a class="mob-mail__link" href="mailto:info@devstudio.com">
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mob-social">
-              <li class="mob-social__item">
-                <a href="" class="mob-social__link"> Instagram </a>
-              </li>
-              <li class="mob-social__item">
-                <a href="" class="mob-social__link"> Twitter </a>
-              </li>
-              <li class="mob-social__item">
-                <a href="" class="mob-social__link"> Facebook </a>
-              </li>
-              <li class="mob-social__item">
-                <a href="" class="mob-social__link"> Linkedin </a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </header>
 
     <main>
-      <section class="portfolio-navigation">
+      <section class="main">
         <div class="container">
-          <ul class="portfolio-navigation__list">
-            <li class="portfolio-navigation__item">
+          <ul class="buttons-list">
+            <li class="buttons-item">
               <button type="button" class="buttons-button">Все</button>
             </li>
-            <li class="portfolio-navigation__item">
+            <li class="buttons-item">
               <button type="button" class="buttons-button">Веб-сайты</button>
             </li>
-            <li class="portfolio-navigation__item">
+            <li class="buttons-item">
               <button type="button" class="buttons-button">Приложения</button>
             </li>
-            <li class="portfolio-navigation__item">
+            <li class="buttons-item">
               <button type="button" class="buttons-button">Дизайн</button>
             </li>
-            <li class="portfolio-navigation__item">
+            <li class="buttons-item">
               <button type="button" class="buttons-button">Маркетинг</button>
             </li>
           </ul>
@@ -157,34 +97,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio1_desk_x1.jpg 1x,
-                        ./images/portfolio1_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio1_tab_x1.jpg 1x,
-                        ./images/portfolio1_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio1_mob_x1.jpg 1x,
-                        ./images/portfolio1_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio1_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/laptop.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -201,34 +114,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio2_desk_x1.jpg 1x,
-                        ./images/portfolio2_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio2_tab_x1.jpg 1x,
-                        ./images/portfolio2_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio2_mob_x1.jpg 1x,
-                        ./images/portfolio2_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio2_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/poster.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -247,34 +133,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio3_desk_x1.jpg 1x,
-                        ./images/portfolio3_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio3_tab_x1.jpg 1x,
-                        ./images/portfolio3_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio3_mob_x1.jpg 1x,
-                        ./images/portfolio3_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio3_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/seafood.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -291,34 +150,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio4_desk_x1.jpg 1x,
-                        ./images/portfolio4_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio4_tab_x1.jpg 1x,
-                        ./images/portfolio4_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio4_mob_x1.jpg 1x,
-                        ./images/portfolio4_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio4_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/headphone.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -335,34 +167,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio5_desk_x1.jpg 1x,
-                        ./images/portfolio5_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio5_tab_x1.jpg 1x,
-                        ./images/portfolio5_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio5_mob_x1.jpg 1x,
-                        ./images/portfolio5_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio5_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/boxes.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -379,34 +184,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href=""
                 ><div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio6_desk_x1.jpg 1x,
-                        ./images/portfolio6_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio6_tab_x1.jpg 1x,
-                        ./images/portfolio6_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio6_mob_x1.jpg 1x,
-                        ./images/portfolio6_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio6_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/screen.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -423,34 +201,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio7_desk_x1.jpg 1x,
-                        ./images/portfolio7_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio7_tab_x1.jpg 1x,
-                        ./images/portfolio7_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio7_mob_x1.jpg 1x,
-                        ./images/portfolio7_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio7_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/book.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -467,34 +218,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio8_desk_x1.jpg 1x,
-                        ./images/portfolio8_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio8_tab_x1.jpg 1x,
-                        ./images/portfolio8_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio8_mob_x1.jpg 1x,
-                        ./images/portfolio8_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio8_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/badge.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -511,34 +235,7 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-overlay">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio9_desk_x1.jpg 1x,
-                        ./images/portfolio9_desk_x2.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio9_tab_x1.jpg 1x,
-                        ./images/portfolio9_tab_x2.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio9_mob_x1.jpg 1x,
-                        ./images/portfolio9_mob_x2.jpg 2x
-                      "
-                      media="(min-width: 480px)"
-                    />
-                    <img
-                      src="./images/portfolio9_desk_x1.jpg"
-                      alt=""
-                      width="370"
-                    />
-                  </picture>
+                  <img src="./images/surf.jpg" alt="" />
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -562,24 +259,26 @@
           <a href="./index.html" class="footer-webstudio link"
             >Web<span class="footer-logo">Studio</span></a
           >
-          <address class="footer__address">
-            <ul class="footer__list">
-              <li class="footer__item">
+          <address class="footer-address">
+            <ul class="footer-list">
+              <li class="footer-item">
                 <a
-                  class="footer-link address"
+                  class="footer-link link address"
                   href="https://goo.gl/maps/LqxU8Z8EwyXyZSnf8"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer__item">
-                <a class="footer-mail" href="mailto:info@devstudio.com"
+              <li class="footer-item">
+                <a
+                  class="footer-mail link address"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer__item">
-                <a class="footer-tel address" href="tel:+380961111111"
+              <li class="footer-item">
+                <a class="footer-tel link address" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -627,17 +326,17 @@
             </li>
           </ul>
         </div>
-
         <div class="footer-form">
           <form>
             <p class="footer-form-text">Подпишитесь на рассылку</p>
+
             <input
               type="email"
               class="footer-imput"
               name="user-email-footer"
               placeholder="E-mail"
             />
-            <button type="submit" class="main__buttom footer-form-btn">
+            <button type="submit" class="footer-form-btn">
               Подписаться
               <svg class="footer-icon-form" width="24" height="24">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-send"></use>
@@ -647,6 +346,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,21 +1,7 @@
 
   .contact {
-    // @include align-list;
-    // margin-left: auto;
-    
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-   @include tablet{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-   }
-   @include desktop{
-    display: flex;
-    flex-direction: row;
-   }
+    @include align-list;
+    margin-left: auto;
   }
   .contact__item {
     width: 100%;
