@@ -1,117 +1,170 @@
-.flex {
-    text-align: center;
-}
 .footer {
-    background-color: var(--background-footer);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.address__list {
-    color: var(--contacts-color);
-    margin-top: 20px;
-    margin-bottom: 60px;
-    // & .address__item:not(:last-child) {
-    //     margin-bottom: 9px;
-    // }
-}
-.address__list .address__item:not(:last-child) {
-    margin-bottom: 8px;
-}
-.address__accent {
-    color: var(--address-color);
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  // @media screen and (max-width: 767px) {
+  //   align-items: center;
+  //   text-align: center;
+  // }
+
+ @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  @include desktop{
+    text-align: left;
+
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   align-items: baseline;
+  //   justify-content: center;
+  // }
 }
 
-.address__link {
-    font-style: normal;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    @include transition(color);
-    .address__list &:focus,
-    .address__list &:hover {
-        color: var(--address-color);
-    }
+
+.footer-webstudio {
+  font-family: "Raleway";
+  @include font(700, 26px, 31px, 00.03em);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $main-second-color;
 }
-.footer__join {
-    display: block;
+
+.footer-logo {
+  color: $white-color;
 }
-// .footer__join {
-//     align-items: baseline;
-//     display: flex;
+
+.footer__address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
+}
+.footer-link {
+  @include font(400, 14px, 24px, 00.03em);
+  color: $white-color;
+}
+
+.footer-mail,
+.footer-tel {
+  @include font(400, 14px, 24px, 00.03em);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// .address:not(:last-child) {
+//   margin-bottom: 8px;
 // }
-.join {
-    text-align: center;
-    // margin-left: 70px;
-    // margin-right: 93px;
-    &__title {
-        margin-bottom: 20px;
-        color: var(--title-color);
-    }
+.footer-soc {
+  @include tablet{
+    display: inline-block;
+  
+ 
+  }
+  // @include desktop {
+  //   margin-right: auto;
+  // }
 }
-.join__list.social {
-    justify-content: center;
-    margin-bottom: 60px;
-}
-.join__link {
-    background-color: rgba(255, 255, 255, 0.1);
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        border: 1px solid var(--accent-color);
-    }
-}
-.join__icon {
-    fill: currentColor;
-    fill: var(--primary-btn-color);
-    &:hover,
-    &:focus {
-        fill: var(--primary-btn-color);
-    }
-}
-.form {
-    display: block;
-}
-.subs__title {
-    margin-bottom: 20px;
-    color: var(--title-color);
-    text-align: center;
-}
-.form__mail {
-    @include size(450px, 50px, 4px);
-    font-size: 18px;
-    padding-left: 20px;
-    margin-right: 12px;
-    background-color: var(--background-footer);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    color: var(--title-color);
-    &::placeholder {
-        @include font(400, 16px, 1.25, 0.03em);
-        color: rgba(255, 255, 255, 0.6);
-    }
+.footer-soc-text {
+  font-family: inherit;
+  font-style: normal;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.form__btn {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    padding-left: 29px;
-    @include size(200px, 50px, 4px);
-    @include font(700, 16px, 1.88, 0.06em);
-    color: var(--primary-btn-color);
-    background: #2196f3;
-    border: none;
-    @include transition(background-color);
-    &:hover {
-        background-color: var(--add-accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+.footer__link-color {
+  fill: $icons-color;
+  background: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+  &:hover,
+  &:focus {
+    background-color: $main-second-color;
+  }
 }
-.form__icontg {
-    position: absolute;
-    top: 13px;
-    right: 28px;
+
+.footer-form{
+  @include tablet {
+ margin-top: 30px ;
+}
+@include desktop{
+  margin-top: 0;
+}
+}
+.footer-form-text {
+  font-family: inherit;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+
+.footer-imput {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2f303a;
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition-property: border;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:focus {
+    border: 1px solid $main-second-color;
+    outline: none;
+  }
+  &::placeholder {
+    display: inline-block;
+    font-family: inherit;
+    @include font(400, 16px, 20px, 00.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+ @include desktop {
+    width: 360px;
+  }
+}
+
+
+
+.footer-form-btn {
+  padding: 10px 29px 10px 28px;
+  margin-left: 12px;
+  display: inline-flex;
+  transition-property: background-color, color, box-shadow, fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:hover {
+    background-color: $button-tex-color;
+    color: $hover-focus_color;
+    fill: $hover-focus_color;
+  }
+}
+
+
+.footer-icon-form {
+  margin-left: 10px;
 }

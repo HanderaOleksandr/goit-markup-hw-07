@@ -1,65 +1,59 @@
 .team {
-    background-color: var(--background-section);
+  background-color: #f5f4fa;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include desktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.team__list {
-    display: block;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
-}
-.team__list .team__item:not(:last-child) {
-    margin-bottom: 30px;
-}
-.team__item {
-    width: 450px;
-    @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
-        width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 4 * 30px) / 4);
-        margin: 15px;
-        width: 270px;
-    }
+.team__title {
+  @include font(700, 28px, 33px, 00.03em);
+  text-align: center;
+  color: $main-color;
+  margin-bottom: 30px;
 }
 
-.team__box {
+.team__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  @include tablet {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: var(--title-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
-.team__item .team__title {
-    margin-bottom: 10px;
-    @include font(500, 16px, 1.18, null);
-    text-align: center;
-    color: var(--second-title-color);
+
+.team__item {
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
-.team__text {
-    @include font(null, 16px, 1.18, 0.03em);
-    text-align: center;
-    margin-bottom: 16px;
+
+// .team__item--margin:not(:last-child) {
+//   margin-right: 30px;
+// }
+.team-card {
+  padding: 30px 0;
 }
-.team__link {
-    background-color: transparent;
+
+.team-card__title {
+  @include font(500, 16px, 19px, 00.03em);
+  margin-bottom: 10px;
+  color: $main-color;
 }
-.team__icon {
-    fill: currentColor;
-    fill: var(--icon-color);
-    &:hover {
-        fill: var(--primary-btn-color);
-    }
+
+.team-card__text {
+  @include font(400, 16px, 19px, 00.03em);
+  color: $mail-color;
+  margin-bottom: 16px;
 }
